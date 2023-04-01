@@ -1,0 +1,37 @@
+Create a store that sells shirts database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, size TEXT, price INTEGER, quantity_sold INTEGER, color TEXT);
+
+INSERT INTO store VALUES (1, "shirt", "large", 14.99, 10, "red");
+INSERT INTO store VALUES (2, "shirt", "medium", 12.99, 12, "pink");
+INSERT INTO store VALUES
+(3, "shirt", "small", 13.99, 11, "fuchsia");
+INSERT INTO store VALUES 
+(4, "shirt", "large", 15.99, 15, "black");
+INSERT INTO store VALUES 
+(5, "shirt", "medium", 12.99, 12, "orange");
+INSERT INTO store VALUES 
+(6, "shirt", "large", 12.99, 13, "purple");
+INSERT INTO store VALUES 
+(7, "shirt", "large", 15.99, 10, "blue");
+INSERT INTO store VALUES 
+(8, "shirt", "small", 10.99, 5, "yellow");
+INSERT INTO store VALUES 
+(9, "shirt", "medium", 11.99, 6, "navy");
+INSERT INTO store VALUES 
+(10, "shirt", "small", 14.99, 15, "maroon");
+INSERT INTO store VALUES 
+(11, "shirt", "large", 11.99, 7, "magenta");
+INSERT INTO store VALUES 
+(12, "shirt", "medium", 15.99, 6, "grey");
+INSERT INTO store VALUES 
+(13, "shirt", "large", 10.99, 5, "brown");
+INSERT INTO store VALUES 
+(14, "shirt", "medium", 14.99, 9, "green");
+INSERT INTO store VALUES 
+(15, "shirt", "large", 12.99, 7, "olive");
+
+---display the database ordered by price.
+
+SELECT * FROM store 
+ORDER by price asc;
